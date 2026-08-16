@@ -1,20 +1,32 @@
 package fmto_Scanner1;
-
+ 
+import java.util.Scanner;
+ 
 public class ex2 {
-
+ 
 	public static void main(String[] args) {
-		String produto = "Notebook";
-		int codigo = 101;
-		double preco = 3500.00;
-		int estoque = 10;
-
-		System.out.println("Produto: " + produto);
-		System.out.println("Código: " + codigo);
-		System.out.println("Preço: R$ " + preco);
-		System.out.println("Estoque: " + estoque);
-
-
-
+ 
+		Scanner sc = new Scanner(System.in);
+ 
+		String nomeProduto;
+		int codigo;
+		double preco;
+		int quantidadeEstoque;
+ 
+		System.out.println("Digite o nome do produto: ");
+		nomeProduto = sc.nextLine();
+		System.out.println("Digite o código do produto: ");
+		codigo = sc.nextInt();
+		System.out.println("Digite o preço do produto: ");
+		preco = sc.nextDouble();
+		System.out.println("Digite a quantidade em estoque: ");
+		quantidadeEstoque = sc.nextInt();
+ 
+		System.out.println("Produto: " + nomeProduto + ", Código: " + codigo
+				+ ", Preço: R$ " + preco + ", Estoque: " + quantidadeEstoque + " unidades");
+ 
+		sc.close();
+ 
 	}
-
+ 
 }

@@ -1,20 +1,27 @@
 package fmto_Scanner1;
-
+ 
+import java.util.Scanner;
+ 
 public class ex7 {
-
+ 
 	public static void main(String[] args) {
-		
-
-		int numA = 7;
-		int numB = 2;
-
-		int divisaoInteira = numA / numB;
-		double divisaoReal = (double) numA / numB;
-
-		System.out.println("Divisão inteira: " + divisaoInteira);
-		System.out.println("Divisão real: " + divisaoReal);
-
-
+ 
+		Scanner sc = new Scanner(System.in);
+ 
+		double salario;
+ 
+		System.out.println("Digite o salário: ");
+		salario = sc.nextDouble();
+ 
+		int salarioInt = (int) salario;
+		double salarioConvertido = (double) salarioInt;
+ 
+		System.out.println("Valor original: " + salario);
+		System.out.println("Valor convertido para int: " + salarioInt);
+		System.out.println("Valor convertido de volta para double: " + salarioConvertido);
+ 
+		sc.close();
+ 
 	}
-
+ 
 }
